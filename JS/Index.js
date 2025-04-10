@@ -387,7 +387,7 @@ function checkAndUpdateBalance() {
     } else {
         changeElement.textContent = `${remainingBalance} VND`;
         changeElement.style.color = "green";
-        notificationElement.innerHTML = `<p>Số dư còn lại: ${remainingBalance} VND</p>`;
+        // notificationElement.innerHTML = `<p>Số dư còn lại: ${remainingBalance} VND</p>`;
     }
 }
 
@@ -510,7 +510,7 @@ function toggleSortTransactions() {
 
 function previousPage() {
     if (currentPage > 1) {
-        currentPage--;
+        currentPage--; 
         displayTransactions();
     }
 }
