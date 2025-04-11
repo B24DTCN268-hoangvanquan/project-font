@@ -114,7 +114,11 @@
     <div class="transaction2">
       <h3>🧾 Lịch sử giao dịch</h3>
       <div class="Chucnang">
-        <input id="searchInput" placeholder="Tìm nội dung" />
+        <!-- <input id="searchInput" placeholder="Tìm nội dung" /> -->
+
+        <input type="text" id="searchInput" oninput="showSuggestions()" placeholder="Tìm kiếm giao dịch...">
+        <div id="suggestions" class="suggestions-box"></div>
+
         <button class="Timkiem" onclick="searchTransactions()">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -133,7 +137,7 @@
     </div>
   </div>
   <br />
-  <div class="Statistical">
+  <!-- <div class="Statistical">
     <div class="Statistical2">
       <p>📆 Thống kê chi tiêu các tháng</p>
       <table>
@@ -149,33 +153,33 @@
           <td>5,000,000 VND</td>
           <td class="status-green">✅ Đạt</td>
         </tr>
-        <tr>
-          <td>2025-04</td>
-          <td>3,100,000 VND</td>
-          <td>3,000,000 VND</td>
-          <td class="status-red">&ensp; Vượt</td>
-        </tr>
-        <!-- <tr>
-            <td>2025-05</td>
-            <td>6,200,000 VND</td>
-            <td>4,000,000 VND</td>
-            <td class="status-green">✅ Đạt</td>
-          </tr>
+        
+      </table>
+    </div>
+  </div> -->
+  
+  <div class="Statistical">
+    <div class="Statistical2">
+      <p>📆 Thống kê chi tiêu các tháng</p>
+      <table id="statisticalTable">
+        <thead>
           <tr>
-            <td>2025-06</td>
-            <td>7,100,000 VND</td>
-            <td>9,000,000 VND</td>
-            <td class="status-red">&ensp; Vượt</td>
+            <td>Tháng</td>
+            <td>Chi tiêu</td>
+            <td>Ngân sách</td>
+            <td>Trạng thái</td>
           </tr>
-          <tr>
-            <td>2025-07</td>
-            <td>7,200,000 VND</td>
-            <td>5,000,000 VND</td>
-            <td class="status-green">✅ Đạt</td>
-          </tr> -->
+        </thead>
+        <tbody id="statisticalBody">
+          <!-- Dữ liệu sẽ được thêm tự động bằng JavaScript -->
+        </tbody>
       </table>
     </div>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+  
+  
   <br />
   <div class="ThayHai">
     <p>© 2025 Quản Lý Tài Chính Cá Nhân. by Hoàng Văn Quân!</p>
@@ -183,3 +187,4 @@
 </body>
 
 </html>
+

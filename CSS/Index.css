@@ -274,13 +274,20 @@ body {
     border-bottom: 1px solid rgb(186, 184, 184);
 }
 
+.action-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* Khoảng cách giữa nút Sửa và Xóa */
+}
+
 .edit-button,
 .delete-button {
-    color: #DC2626;
+    color: #de2a2a;
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 4px 8px;
 }
 
 .edit-button:hover,
@@ -413,6 +420,26 @@ body {
     height: 40px;
     padding-left: 10px;
 }
+
+  .suggestions-box {
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 100;
+  }
+  .suggestion-item {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .suggestion-item:hover {
+    background-color: #f0f0f0;
+  }
+
+
+
 
 .Chucnang .Timkiem {
     background-color: #1D4ED8;
@@ -551,3 +578,4 @@ body {
     width: 1440px;
     height: 68px;
 }
+
