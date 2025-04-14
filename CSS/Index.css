@@ -438,9 +438,6 @@ body {
     background-color: #f0f0f0;
   }
 
-
-
-
 .Chucnang .Timkiem {
     background-color: #1D4ED8;
     color: #DEE2E6;
@@ -568,7 +565,7 @@ body {
     color: red;
 }
 
-.ThayHai {
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -577,5 +574,99 @@ body {
     text-align: center;
     width: 1440px;
     height: 68px;
+}
+@media (max-width: 768px) {
+    .main .content {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .container .container2,
+    #banner1,
+    .date .date1,
+    .formgroup .formgroup1,
+    .balance .balance1,
+    .category-inner,
+    .transaction .transaction2,
+    .Notification .Notification2,
+    .Statistical2 {
+        width: 95%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .enter .enter2 {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        height: auto;
+        width: 95%;
+    }
+
+    .amount,
+    .moneyspent,
+    .enter .enter2 button {
+        width: 100%;
+    }
+
+    .Chucnang {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Chucnang input,
+    .Chucnang .Sapxep {
+        width: 100%;
+    }
+
+    .footer {
+        width: 100%;
+        font-size: 14px;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .suggestions-box {
+        width: 90%;
+    }
+
+    .edit-form {
+        width: 90%;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .transactions td,
+    .Statistical2 table td {
+        font-size: 14px;
+        word-break: break-word;
+    }
+
+    .add-category {
+        flex-direction: column;
+    }
+
+    .category-input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .Phantrang {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .Phantrang .nav-button {
+        width: auto;
+    }
+
+    .content select {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
 

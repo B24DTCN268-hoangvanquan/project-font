@@ -508,7 +508,7 @@ function deleteTransaction(index) {
 // Tìm kiếm giao dich theo nôi dung 
 function showSuggestions() {
     const input = document.getElementById("searchInput");
-    const keyword = input.value.toLowerCase().trim();
+    const keyword = input.value.toLowerCase().trim(); 
     const suggestionsBox = document.getElementById("suggestions");
 
     if (!keyword) {
@@ -538,8 +538,6 @@ function selectSuggestion(value) {
     document.getElementById("suggestions").innerHTML = "";
     searchTransactions(); // Gọi lại hàm tìm kiếm
 }
-
-
 
 function toggleSortTransactions() {
     sortAscending = !sortAscending;
